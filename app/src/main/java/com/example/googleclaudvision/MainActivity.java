@@ -8,6 +8,8 @@ import android.graphics.drawable.BitmapDrawable;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         TextView facedetection= findViewById(R.id.FaceDetection);
         TextView labeldetection= findViewById(R.id.LabelDetection);
         TextView textdetection= findViewById(R.id.TextDetection);
@@ -57,7 +60,17 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
 
+        labeldetection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Labeldetection = new Intent (MainActivity.this, LabelDetection.class);
+                MainActivity.this.startActivity(Labeldetection);
+                finish();
+            }
+        });
+
+
+    }
 
 }

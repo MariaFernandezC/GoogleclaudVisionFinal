@@ -12,22 +12,30 @@
         android:id="@+id/imageViewid"
         android:layout_width="match_parent"
         android:layout_height="290dp"
-        android:layout_weight="9" />
+        android:layout_weight="9"
+        android:background="@color/colorAccent" />
 
     <Button
         android:id="@+id/tomarfoto"
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
+        android:layout_width="239dp"
+        android:layout_height="30dp"
         android:layout_weight="1"
-        android:text="Tomar foto" />
+        android:fontFamily="cursive"
+        android:text="Tomar foto"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/procesar2"
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
+        android:layout_width="241dp"
+        android:layout_height="33dp"
         android:layout_weight="1"
-        android:text="IdentificarO"
-        />
+        android:fontFamily="cursive"
+        android:text="Identificar rostro"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/results"

@@ -49,6 +49,7 @@ public class FaceDetection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_face_detection);
 
+
       final Paint boxPaint =new Paint();
         boxPaint.setStrokeWidth(5);
         boxPaint.setColor(Color.GREEN);
@@ -71,7 +72,7 @@ public class FaceDetection extends AppCompatActivity {
         });
 
 
-        final Bitmap bitmap =BitmapFactory.decodeResource(getApplicationContext().getResources(),R.drawable.face);/// aqui debe ir el imageView pero la conversion hay que ver
+        final Bitmap bitmap =BitmapFactory.decodeResource(getApplicationContext().getResources(),R.drawable.face);/// aqui debe ir el imageView pero la conversion
         imageView.setImageBitmap(bitmap);
 
         final Bitmap tempBitmap = Bitmap.createBitmap(bitmap.getWidth(),bitmap.getHeight(),Bitmap.Config.RGB_565);
@@ -122,5 +123,7 @@ public class FaceDetection extends AppCompatActivity {
         imageView.setImageBitmap(bitmap);
 
     }
+
+
 
 }
