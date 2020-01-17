@@ -125,5 +125,4 @@ public class FaceDetection extends AppCompatActivity {
     }
 
 
-
 }

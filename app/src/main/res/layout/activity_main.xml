@@ -48,6 +48,20 @@
         android:textSize="18sp"
         android:textStyle="bold|italic" />
 
+        <TextView
+            android:id="@+id/FaceDetection1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="30dp"
+            android:text="Detectar rostro_segunda Forma"
+            android:textAlignment="center"
+            android:textColor="#1e8449"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
     <TextView
         android:id="@+id/LabelDetection"
         android:layout_width="match_parent"

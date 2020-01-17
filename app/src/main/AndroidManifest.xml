@@ -13,11 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".LabelDetection" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".FaceDetection"  android:parentActivityName=".MainActivity"/>
-        <activity android:name=".TextDetection"  android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity" android:noHistory="false">
+        <activity android:name=".FaceDetection2"></activity>
+        <activity
+            android:name=".LabelDetection"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FaceDetection"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TextDetection"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

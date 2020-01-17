@@ -40,8 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         TextView facedetection= findViewById(R.id.FaceDetection);
+        TextView facedetection2 =findViewById(R.id.FaceDetection1);
         TextView labeldetection= findViewById(R.id.LabelDetection);
         TextView textdetection= findViewById(R.id.TextDetection);
+
 
         textdetection.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent detectionFace = new Intent (MainActivity.this, FaceDetection.class);
                 MainActivity.this.startActivity(detectionFace);
+                finish();
+            }
+        });
+
+        facedetection2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent detectionFace2 = new Intent (MainActivity.this, FaceDetection2.class);
+                MainActivity.this.startActivity(detectionFace2);
                 finish();
             }
         });

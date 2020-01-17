@@ -36,6 +36,16 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
+    <Button
+        android:id="@+id/procesar3"
+        android:layout_width="241dp"
+        android:layout_height="33dp"
+        android:layout_weight="1"
+        android:fontFamily="cursive"
+        android:text="Identificar "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/results"
